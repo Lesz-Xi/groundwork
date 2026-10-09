@@ -1,0 +1,18 @@
+[
+  {
+    "family": "Archivo",
+    "file": "archivo.woff2",
+    "license": "Archivo-OFL.txt",
+    "bytes": 90096,
+    "sha256": "4c98b9d490d1698ec95f2ff17a6c7d0e72691864c0c5d7bc2a2c161b45afe5ad",
+    "role": "approved final font for headings, prose and controls"
+  },
+  {
+    "family": "Commit Mono",
+    "file": "commit-mono.woff2",
+    "license": "CommitMono-OFL.txt",
+    "bytes": 86768,
+    "sha256": "f342ca6c3f2597e6c0fcd84b3f3ed64d3ce5bdb6d0af19d190d645a558b1cf29",
+    "role": "approved final font for annotations, code and note fields"
+  }
+]

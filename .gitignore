@@ -1,0 +1,23 @@
+# Local operating-system and editor state
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+
+# Credentials and private working material
+.env
+.env.*
+!.env.example
+personal/
+research-notebook.md
+research-field-kit.md
+
+# Generated browser profiles/captures/downloads and test output
+.qa/
+.impeccable/
+artifact-checks-integration.json
+qa-results-integration.json
+
+# Local packaging; GitHub's source ZIP is the distribution archive
+*.zip

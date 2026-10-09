@@ -1,0 +1,186 @@
+<section class="chapter" id="measurement" data-title="Measurement & data" data-part="Design & reason">
+<h2>A precise number can measure the wrong thing.</h2>
+<p class="intuition"><strong>In plain words.</strong> A scale that is always five kilograms off can be consistent without being accurate. A perfectly counted click can still be a poor measure of understanding.</p>
+<div class="depth">
+<p>A <strong>construct</strong> is the concept of interest: trust, learning, fatigue, usefulness. An <strong>operationalization</strong> specifies how that concept enters observation or analysis. A <strong>variable</strong> can take different values; a <strong>measure</strong> gives the procedure for obtaining them. Ask whether the measure captures the intended construct or merely a convenient proxy.</p>
+<p><strong>Reliability</strong> concerns consistency under specified conditions. <strong>Validity</strong> concerns whether the interpretation or inference is justified. Construct validity concerns the measure–concept connection; internal validity concerns the credibility of an inference within a study, often causal; external validity concerns extension beyond studied conditions. Terminology and validation practices differ across disciplines. A reliability coefficient is not a universal certificate of validity. [S15]</p>
+<h3>Data do not arrive unmediated</h3>
+<p>Collection instruments, prompts, logging decisions, coding rules, units and exclusions shape the dataset. Keep a data dictionary, identify how each field was produced, and preserve transformations. Separate raw observations from cleaned data and derived features. Record software versions, data versions and decisions about outliers or impossible values. Sensitive raw data may need restricted retention, not indiscriminate preservation.</p>
+<p>Missingness has mechanisms. <strong>MCAR</strong>, <strong>MAR</strong> and <strong>MNAR</strong> describe different assumptions about how missing data relate to observed and unobserved values. They are not labels a tool can reliably infer from a blank cell. Dropping incomplete cases or replacing values with a mean can change the target population, variability and bias. Choose and justify a method; use sensitivity analysis where assumptions cannot be settled from observed data alone.</p>
+<h3>Protect the evaluation boundary</h3>
+<p>Training, validation and test sets have different jobs. Repeatedly tuning to a held-out test set makes it part of development. Leakage occurs when information unavailable at the intended prediction time enters training or assessment. A high benchmark score is less informative if examples, labels or task patterns leaked across that boundary.</p>
+</div>
+<p class="takeaway"><strong>Precision does not remove bias.</strong> A larger sample can make a biased estimate look more impressively precise.</p>
+<div class="practice"><h3>Try it</h3><p>For your central outcome, state the construct, measurement procedure, unit, known failure modes and one alternative measure. Would the conclusion change if the proxy were misleading?</p></div>
+</section>
+
+<section class="chapter" id="causality" data-title="Association & causality" data-part="Design & reason">
+<h2>Seeing a pattern is not the same as changing an outcome.</h2>
+<p class="intuition"><strong>In plain words.</strong> Umbrellas and wet streets appear together. Taking umbrellas away would not stop the rain. The pattern alone does not tell you what an intervention will do.</p>
+<div class="depth">
+<p><strong>Association</strong> describes how variables vary together. <strong>Prediction</strong> uses available information to anticipate outcomes. <strong>Causal inference</strong> asks what would happen under a specified change, compared with an alternative. A <strong>counterfactual</strong> asks about an alternative outcome under a different condition for the relevant unit or setting. Moving between these questions requires information and assumptions, not merely a more confident verb. [S16]</p>
+<p>A <strong>confounder</strong> can influence both the exposure/treatment and outcome, creating a competing explanation for their association. A <strong>mediator</strong> lies along a proposed causal pathway. A <strong>collider</strong> is a common effect of variables; conditioning on one can create bias. These are roles in a model, not permanent properties of variable names. Adding every available variable to a regression is not a universally safe adjustment strategy.</p>
+<h3>What would identify the effect?</h3>
+<p>An <strong>estimand</strong> is the precise target quantity or contrast. <strong>Identification</strong> asks whether it can be expressed in terms of the available information under stated assumptions. <strong>Estimation</strong> computes an estimate using data. A beautifully estimated association is not an identified causal effect simply because software reports a narrow interval.</p>
+<p>Random assignment can support causal comparison by breaking systematic treatment assignment links, but it does not automatically solve attrition, noncompliance, interference, measurement problems or generalization. Observational causal inference is possible under appropriate designs and assumptions; it is not forbidden, nor does it follow from association alone. Common concerns include exchangeability, positivity/overlap, consistent treatment definitions, and whether one unit's treatment affects another's outcome.</p>
+<h3>Diagrams are commitments</h3>
+<p>A causal graph makes assumed relationships inspectable. It does not prove those relationships from the act of drawing arrows. An execution-order graph, citation network or dependency map is not automatically a causal model. State which kind of edge you mean, and examine which alternative models could explain the same observations.</p>
+</div>
+<p class="takeaway"><strong>Use causal language only as strongly as the design and assumptions allow.</strong> “Associated with,” “predicts,” and “causes” do different work.</p>
+<div class="practice"><h3>Try it</h3><p>For “X improves Y,” specify the intervention, comparison, population and outcome time. Name one plausible confounder and one assumption your planned data cannot directly verify.</p></div>
+</section>
+
+<section class="chapter" id="statistics" data-title="Statistical inference" data-part="Design & reason">
+<h2>A statistic answers a narrower question than a story.</h2>
+<p class="intuition"><strong>In plain words.</strong> Statistics helps describe variation and reason under uncertainty. It does not remove the need to ask whether you measured the right thing, used a defensible model, or drew the right conclusion.</p>
+<div class="depth">
+<p>An <strong>effect size</strong> describes magnitude in a chosen scale. A <strong>standard deviation</strong> describes spread among observations; a <strong>standard error</strong> describes uncertainty of an estimator under a model/design. A large dataset can make a tiny effect statistically detectable without making it important. Conversely, an important possible effect can remain imprecisely estimated.</p>
+<h3>The p-value, carefully</h3>
+<p>A p-value assesses how incompatible the observed result is with a specified null model, using a defined test statistic and extremeness rule. More precisely, under that model and its assumptions, it is the probability of obtaining a statistic at least as extreme as the observed one. It is <strong>not</strong> the probability that the null hypothesis is true, that your theory is false, or that “chance caused the result.” The ASA specifically warns against treating a threshold as a substitute for scientific reasoning. [S06]</p>
+<p>Illustration only: <em>p = .03</em> does not mean “97% probability our mechanism is correct.” The model, design, multiplicity, effect magnitude, uncertainty and competing explanations still matter. A non-significant result is not automatically evidence of no effect. An equivalence claim needs an appropriate design, meaningful bounds and analysis—not merely failure to reject a null.</p>
+<h3>Intervals do different jobs</h3>
+<p>A frequentist <strong>95% confidence interval</strong> comes from a procedure with a specified long-run coverage property under its assumptions. It is not, in that framework, a 95% probability statement about the fixed parameter lying in this particular realized interval. A Bayesian <strong>credible interval</strong> summarizes posterior probability conditional on the model, data and prior. A <strong>prediction interval</strong> concerns future observations rather than just an unknown mean or parameter. None automatically captures every source of bias or model misspecification. [S07]</p>
+<h3>Design for honest uncertainty</h3>
+<p><strong>Power</strong> is the probability of rejecting the null under a specified alternative and design. Sample-size planning depends on the question, effect of interest, noise, precision, clustering and error tradeoffs; there is no universal “30 participants is enough.” Running many tests or trying many pipelines changes error risks. Prespecify relevant decisions, report multiplicity/deviations, distinguish exploration, and use suitable corrections or validation—not selective reporting of the smallest p-value. [S05] [S06]</p>
+<p>Bayesian updating combines prior information with a likelihood to obtain a posterior. It is not a shortcut around assumptions: priors, model choices and sensitivity still need justification. Frequentist and Bayesian quantities should not be blended into one vague confidence number.</p>
+</div>
+<p class="takeaway"><strong>Report magnitude, uncertainty and meaning together.</strong> Statistical significance is neither practical importance nor a causal mechanism.</p>
+<div class="practice"><h3>Try it</h3><p>Translate a numerical result into three sentences: what was estimated, how uncertain it is, and what the design does not establish. Avoid the words “proved” and “significant” until you can explain their intended meaning.</p></div>
+</section>
+
+<section class="chapter" id="qualitative" data-title="Qualitative understanding" data-part="Design & reason">
+<h2>Depth is more than turning interviews into counts.</h2>
+<p class="intuition"><strong>In plain words.</strong> If you want to understand how people experience a practice, their meanings and circumstances are part of the evidence—not noise to delete before the “real” analysis.</p>
+<div class="depth">
+<p>Qualitative inquiry is not simply quantitative inquiry with too few participants. It may investigate how people make sense of experiences, how practices develop, or how institutions and contexts shape action. Interviews, observations, documents and other materials are generated and interpreted within a chosen methodological approach. Clear reporting makes that approach and its relationship to the findings inspectable. [S08]</p>
+<p><strong>Coding</strong> assigns analytic labels to material. A <strong>theme</strong> is not necessarily the most frequently used word or the most frequently mentioned topic; it can represent a patterned meaning relevant to the question. Whether coding is inductive, deductive or combined, explain the path from material to interpretation and what role theoretical commitments played.</p>
+<h3>Rigor without pretending the researcher disappears</h3>
+<p><strong>Reflexivity</strong> examines how the researcher's position, assumptions, relationships and decisions shape the work. It is not a ritual confession that cancels bias. An audit trail records analytic development. Attention to negative or deviant cases can reveal where an emerging interpretation is too broad. Contextual description helps readers judge transferability.</p>
+<p>Terms such as credibility, dependability, confirmability and transferability are used in some traditions to discuss trustworthiness. Do not turn them into a universal checklist detached from the epistemology of the study. Inter-coder agreement can be appropriate for some coding designs, while other approaches do not treat agreement between coders as their central quality criterion. Justify the standard rather than claiming one method settles every tradition.</p>
+<h3>Sampling and saturation need a rationale</h3>
+<p>Purposive or theoretical sampling may seek cases that illuminate a concept rather than approximate a population distribution. Saturation has multiple meanings and is not a magic sample-size threshold. Explain what was expected to become sufficient—codes, conceptual development, variation or something else—and whether saturation is appropriate to the chosen approach at all.</p>
+<p>Quotations should connect an interpretation to material while protecting participants. A vivid quote does not prove prevalence, represent every participant, or absolve you from showing analytic reasoning. Anonymity also depends on context: removing a name may not prevent re-identification.</p>
+</div>
+<p class="takeaway"><strong>Interpretation must be accountable, not falsely mechanical.</strong> Preserve meaning, context, researcher influence and the path to the conclusion.</p>
+<div class="practice"><h3>Try it</h3><p>Take one proposed theme. Show supporting material, a plausible rival interpretation, a negative case, and why your reading fits the study's approach.</p></div>
+</section>
+
+<section class="chapter" id="synthesis" data-title="Appraisal & synthesis" data-part="Build a warranted claim">
+<h2>Synthesis is not a vote among abstracts.</h2>
+<p class="intuition"><strong>In plain words.</strong> Ten weak studies sharing the same flaw do not necessarily outweigh one careful study. Ask why results differ and which evidence actually bears on your question.</p>
+<div class="depth">
+<p><strong>Critical appraisal</strong> evaluates how a source's design, conduct, analysis and reporting affect the inferences you want to use. <strong>Risk of bias</strong> concerns systematic error, not merely whether a paper is well written or published somewhere familiar. <strong>Certainty of evidence</strong> concerns confidence in a body of evidence for a particular conclusion, not a permanent score assigned to an author.</p>
+<p>Separate study limitations, reporting omissions, imprecision, inconsistent findings and applicability. Peer review is a useful scrutiny mechanism, not a guarantee. Citation counts measure influence and attention, not truth. A preregistration, open dataset or available code improves inspectability but does not, by itself, establish a valid method or result.</p>
+<h3>Compare before combining</h3>
+<p>Build a synthesis matrix: question, population/context, design, construct/outcome, result or argument, uncertainty, assumptions, limitations and relevance. Several papers may rely on the same dataset or study; that is not independent corroboration. Differences in measures, populations, follow-up periods or implementation can make nominally similar outcomes non-equivalent.</p>
+<p>Meta-analysis is appropriate only when combining estimates makes substantive and statistical sense. Study weights are not simple votes. Heterogeneity may reflect sampling variation, genuine effect variation, design differences or bias; no single statistic resolves all of those. Publication and selective-reporting processes can distort a pooled estimate. A precise summary of biased inputs remains a problem.</p>
+<h3>Write the relationship, not the pile</h3>
+<p>A synthesis might show convergence under certain assumptions, disagreement explained by context, an unresolved conflict, a measurement mismatch or a missing comparison. “A says X; B says Y; C says Z” is organization, not yet synthesis. Add the supported relationship and its boundary.</p>
+<p>Use domain-appropriate appraisal tools rather than importing one universal evidence ladder. The strongest design for a treatment-effect question is not automatically the strongest design for understanding lived meaning, establishing a theorem, interpreting an archive or evaluating a system's failure behavior. [S04] [S08] [S11]</p>
+</div>
+<p class="takeaway"><strong>Agreement is evidence only after you examine how it arose.</strong> Shared data, assumptions or errors can produce an impressive-looking consensus.</p>
+<div class="practice"><h3>Try it</h3><p>Write one synthesis sentence that begins “These findings differ because…” Then mark which part is established by the sources and which is your hypothesis.</p></div>
+</section>
+
+<section class="chapter" id="formal" data-title="Theory & mathematical work" data-part="Build a warranted claim">
+<h2>Different claims have different completion conditions.</h2>
+<p class="intuition"><strong>In plain words.</strong> Examples can suggest a pattern. A counterexample can destroy a universal claim. A proof must show why the conclusion follows—not simply that a computer found no exception.</p>
+<div class="depth">
+<p>A theoretical framework organizes concepts and proposes explanatory relationships. A model is a selective representation for a purpose. A mathematical theorem is a precise statement supported by a proof under stated assumptions. A conjecture is a proposition not yet established in the relevant sense. These should not be collapsed into the single phrase “we have a theory.”</p>
+<p>For mathematical work, expose definitions, domains, quantifiers, assumptions and necessary lemmas. “For each x there exists a y” is generally not the same as “there exists one y for every x.” Pointwise behavior is not automatically uniform behavior. A finite numerical check does not establish a universal statement over an infinite domain. Failure to find a proof is not a disproof; failure of one attempted proof is not necessarily failure of the theorem.</p>
+<h3>Formal checking has a scope</h3>
+<p>A formal proof assistant can check a formal proposition relative to its logic, axioms, definitions, dependencies and trusted checking process. The proposition may still differ from what the prose claims. Inspect the intended statement, actual target, solution and transitive assumptions. Lean's guidance explicitly separates checking mechanisms and remaining trust conditions; an incomplete proof can be visible through <code>sorryAx</code>. [S12]</p>
+<p>Do not infer proof correctness from a successful LaTeX build, available source file or badge. Nor should all formal checks be dismissed as mere compilation: correctly scoped kernel/checker validation is substantive evidence about the formal artifact. The point is to state exactly what was checked, what was trusted, and whether the formal statement corresponds to the intended claim.</p>
+<h3>Novelty and explanation remain separate</h3>
+<p>A valid proof of a known result is not automatically new research. An original result still needs a correct argument. An elegant explanatory framework must face alternatives and constraints rather than merely re-labeling observations. Empirical theories may produce testable implications; pure mathematical claims face proof and counterexample obligations rather than a forced experimental template.</p>
+</div>
+<p class="takeaway"><strong>Preserve the weakest unresolved step.</strong> A missing necessary lemma cannot be repaired by confident wording or by a passing check of a different statement.</p>
+<div class="practice"><h3>Try it</h3><p>Pick the strongest sentence in an argument. Write its exact quantifiers and assumptions, then list every necessary step that would have to hold for it to be true.</p></div>
+</section>
+
+<section class="chapter" id="architecture" data-title="Architecture & design research" data-part="Build a warranted claim">
+<h2>A useful design needs more than a convincing diagram.</h2>
+<p class="intuition"><strong>In plain words.</strong> “Here is how it could work,” “we built it,” and “it helps under these conditions” are three different claims.</p>
+<div class="depth">
+<p>Architecture and design-oriented research can contribute an artifact, mechanism, representation, contract, design principle, evaluation or explanatory account. Its value depends on the problem and the evidence supporting the contribution. A feature list alone does not establish research novelty; a working prototype alone does not establish user benefit.</p>
+<h3>Separate four layers of evidence</h3>
+<ol><li><strong>Proposal:</strong> requirements, mechanism, alternatives, assumptions and tradeoffs are described.</li><li><strong>Implementation:</strong> particular behavior exists in a particular artifact/version.</li><li><strong>Verification:</strong> scoped properties or requirements were checked by named procedures.</li><li><strong>Evaluation:</strong> evidence addresses usefulness or effects in specified contexts, with suitable comparisons.</li></ol>
+<p>These are not a universal maturity ladder. A well-argued proposal may be a legitimate paper type, and evaluation can shape design long before a final implementation. The distinction prevents a polished diagram from being treated as tested operation. ACM similarly distinguishes artifact availability/evaluation from results validation by another person or team. [S11]</p>
+<h3>Make the mechanism and failure boundary visible</h3>
+<p>State who acts, what data and authority each component has, what must remain invariant, and what happens when a dependency is unavailable, stale or interrupted. Separate information flow from permission to act. If you claim recovery, specify the failure model: process interruption, network failure and power loss are not the same test.</p>
+<p>Use realistic baselines, negative cases and the actual supported environment. Measure the total burden, not just the successful substep: preparation, reading, review, correction, integration and recovery can erase an apparent speed gain. Human evaluation needs appropriate consent and careful task design; a developer's self-review is not independent acceptance.</p>
+<p>An illustrative evaluation question is: “Does version-aware evidence review reduce acceptance of stale claims compared with ordinary notes, after review overhead is included?” It still needs an operational outcome, protocol, comparison and real observations. This handbook supplies no measured result for it.</p>
+</div>
+<p class="takeaway"><strong>Say what exists, what was checked, and what remains proposed.</strong> An inspectable limitation is more useful than an undifferentiated “verified” label.</p>
+<div class="practice"><h3>Try it</h3><p>Label five sentences from an architecture draft as proposal, implementation observation, scoped verification, evaluated result, or hypothesis. Which ones currently overreach?</p></div>
+</section>
+
+<section class="chapter" id="reproducibility" data-title="Reproducibility & provenance" data-part="Build a warranted claim">
+<h2>Make the route recoverable, not just the destination attractive.</h2>
+<p class="intuition"><strong>In plain words.</strong> Someone should be able to tell what you used, what you did, what happened and which parts they could check again.</p>
+<div class="depth">
+<p>Terminology varies. In some communities, <strong>reproducibility</strong> emphasizes obtaining consistent computational results using the same data/code, while <strong>replication</strong> emphasizes new observations or independent implementations addressing the question. ACM's badge policy distinguishes results reproduced using author-provided artifacts from results replicated without them, by another person/team. State the operation rather than assuming every reader shares one vocabulary. [S11]</p>
+<p>Preserve versioned protocols, data dictionaries, code/environment information, parameters, seeds where relevant, source identities and meaningful output checks. A random seed does not control every source of nondeterminism. A container does not prove a correct analysis. A successful rerun can reproduce a bug. Artifact availability is not the same as independent verification of the main result.</p>
+<h3>Provenance is the history of a claim or artifact</h3>
+<p>Record where it came from, which transformations created it, which version a check covered, and who or what performed that check. A digest helps identify exact bytes, not scientific truth. A statement can remain byte-identical while its support changes because an important source is corrected or a necessary review fails. Keep current support and historical receipts distinct.</p>
+<p>The FAIR principles concern findability, accessibility, interoperability and reusability. They include identifiers, metadata, qualified references, provenance and clear reuse conditions. <strong>Accessible does not mean that every file must be public</strong>: authentication and authorization are permitted where necessary. Sensitive data can need controlled access; openness does not override privacy or consent. [S10]</p>
+<h3>Corrections are part of the system</h3>
+<p>Track corrections, retractions and new versions. A retracted source can still be studied as an object of analysis, but should not silently support the original affirmative claim. Preserve a change record and revisit dependent text. Rerun checks when their inputs change; do not simply relabel an old receipt as current.</p>
+</div>
+<p class="takeaway"><strong>Reproducible is not identical to correct.</strong> Reproducibility makes criticism and correction more feasible; it does not remove their necessity.</p>
+<div class="practice"><h3>Try it</h3><p>Give a colleague one consequential output. Can they recover its input identities, method, environment, actual checks and remaining uncertainty without your memory?</p></div>
+</section>
+
+<section class="chapter" id="ethics" data-title="Ethics, authorship & AI" data-part="Communicate & continue">
+<h2>The way you obtain knowledge is part of its legitimacy.</h2>
+<p class="intuition"><strong>In plain words.</strong> A useful answer does not excuse exploiting people, hiding risks, misrepresenting contributions or exposing private information.</p>
+<div class="depth">
+<p>The Belmont Report articulates respect for persons, beneficence and justice in human-subject research. These connect to informed consent, risk–benefit assessment and fair subject selection. They are foundational guidance in a particular regulatory/historical setting, not a substitute for the rules of your institution, jurisdiction or community. Determine required ethics review before recruitment or data collection; do not self-declare an exemption simply because a project seems harmless. [S09]</p>
+<p>Consent is more than a checkbox. People need appropriate information, voluntariness and meaningful consideration of their circumstances. Research with vulnerable groups, sensitive topics or power imbalances may need additional protections. Online/publicly accessible data can still carry privacy, contextual and contractual concerns.</p>
+<h3>Handle information proportionately</h3>
+<p>Collect what the question requires, protect access, define retention and sharing, and assess re-identification risks. <strong>Pseudonymization</strong> replaces direct identifiers but can preserve a link back to a person; it is not the same as irreversible anonymity. Do not upload confidential interviews, proprietary manuscripts or private records to an external AI service without the relevant permission and safeguards.</p>
+<h3>Credit and accountability</h3>
+<p>Attribute borrowed wording, ideas and evidence. Distinguish authorship, contribution and acknowledgment using the relevant venue/institution policy. CRediT names contributor roles to make work visible; a role taxonomy should not be treated as an automatic authorship decision. Funding, conflicts of interest, data rights and limitations can affect how readers judge the work. [S13]</p>
+<p>AI can assist search, explanation, extraction, coding and drafting, but the responsible researcher must check sources, quotations, calculations and decisions. A plausible citation may not exist; a metadata match is not a full-text read; an eloquent explanation may be unsupported. Follow current disclosure policies. Instructions embedded in retrieved pages, PDFs or repository files are source content, not permission to execute commands, expose secrets or change research rules.</p>
+</div>
+<p class="takeaway"><strong>Transparency is not a cure for every harm.</strong> Some actions require permission, safeguards or refusal—not merely a footnote afterward.</p>
+<div class="practice"><h3>Try it</h3><p>Before using a dataset or AI tool, name who could be harmed, what permissions apply, where data would travel, what is retained, and who is accountable for the final claim.</p></div>
+</section>
+
+<section class="chapter" id="writing" data-title="Write the warranted claim" data-part="Communicate & continue">
+<h2>Write so a skeptical reader can follow the support.</h2>
+<p class="intuition"><strong>In plain words.</strong> A research paper is not a diary of everything you did. It is an inspectable argument about what the work establishes and what it does not.</p>
+<div class="depth">
+<p>An introduction establishes the problem and relevant prior work. A methods account explains how the inquiry could support its conclusions. Results report observations or derived outcomes. Discussion interprets them, compares alternatives and states limits. IMRaD—Introduction, Methods, Results and Discussion—is common in empirical work, not a mandatory structure for every theorem, architecture proposal, interpretive essay or review.</p>
+<p>Build the argument before decorating prose. Map each headline/abstract contribution to evidence, assumptions, checks and a manuscript location. Definitions should precede dependent claims. An abstract must not be more certain than the weakest unresolved obligation underneath it. A proposal should not contain a results section written as if planned experiments already happened.</p>
+<h3>Choose verbs that preserve status</h3>
+<div class="table-wrap"><table><caption>A wording ladder is a responsibility, not a confidence meter</caption><thead><tr><th>What you have</th><th>Appropriate wording</th></tr></thead><tbody>
+<tr><td>An idea or design</td><td>We propose / hypothesize / intend to evaluate.</td></tr>
+<tr><td>A source's result you have not reproduced</td><td>The authors report / the source argues, with attribution.</td></tr>
+<tr><td>A bounded observation</td><td>We observed X in this setting under these conditions.</td></tr>
+<tr><td>An incomplete argument</td><td>Conditional on L / this step remains unresolved.</td></tr>
+<tr><td>A completed scoped check</td><td>This named check passed for this version and scope.</td></tr>
+</tbody></table></div>
+<p>There is no automatic jump from the last row to “therefore true, novel and independently validated.” Reporting guidelines help reveal omitted details, but cannot perform the underlying work for you. [S02] [S08] [S11]</p>
+<h3>Review and publication</h3>
+<p>Preprints, conference papers, journal articles, registered reports, technical reports and theses have different review and dissemination arrangements. Peer review is scrutiny, not universal endorsement. Venue fit includes audience, contribution type, reporting requirements, rights and ethics—not just a prestige ranking. Make corrections visible after dissemination; publication does not freeze truth.</p>
+</div>
+<p class="takeaway"><strong>The manuscript must not outrun the evidence.</strong> A clear limitation can strengthen the usefulness of a paper by telling readers where not to rely on it.</p>
+<div class="practice"><h3>Try it</h3><p>Highlight every strong verb in your abstract. For each, point to the exact support that warrants it. Revise any sentence that depends on future work as if it were already complete.</p></div>
+</section>
+
+<section class="chapter" id="long-arc" data-title="Manage extensive work" data-part="Communicate & continue">
+<h2>Build an inquiry you can resume without reconstructing your mind.</h2>
+<p class="intuition"><strong>In plain words.</strong> Extensive research needs memory outside your head: what you asked, what you found, what changed and what remains to do.</p>
+<div class="depth">
+<p>Use a small set of durable records rather than one endlessly growing conversation. A <strong>research brief</strong> holds the question and scope. A <strong>search log</strong> records retrieval decisions. A <strong>source note</strong> preserves exact identity, reading coverage and interpretation. A <strong>claim ledger</strong> connects conclusions to support and objections. A <strong>decision log</strong> explains changes. An <strong>artifact index</strong> points to actual outputs and versions. Keep private materials protected and separate from public evidence.</p>
+<h3>A workable rhythm</h3>
+<ol><li><strong>Orient:</strong> sharpen the question, contribution type and uncertainty.</li><li><strong>Map:</strong> identify relevant communities, source channels and closest work.</li><li><strong>Investigate:</strong> read, collect, build, interpret or prove according to the method.</li><li><strong>Challenge:</strong> examine alternatives, errors and missing support.</li><li><strong>Synthesize:</strong> update the argument and its boundaries.</li><li><strong>Review:</strong> verify the output, obtain appropriate criticism and record the next obligation.</li></ol>
+<p>This is a revisitable loop, not a six-stage certification. Save a checkpoint at meaningful transitions: completed work, exact files/versions, unanswered questions, known failures, and the next feasible action. A checkpoint describing “done” without an output address is difficult to recover.</p>
+<h3>Stop, expand or revise?</h3>
+<p>Expand when a missing dimension could materially change the conclusion. Stop a bounded phase when its declared search/method has been completed and its remaining limits are explicit. Revise when the question, measure or assumptions no longer fit the evidence. A deadline can justify a scoped report, not an unrestricted completeness claim. Avoid “one more source” as a substitute for deciding what evidence would actually settle the next issue.</p>
+<p>For a synthetic architecture example, move from “make research trustworthy” to a bounded question about stale-claim detection. Map prior work; define a stale acceptance event; compare against ordinary notes; include review overhead, false alarms and failure recovery; obtain consent for human testing; preserve planned versus observed outcomes. Until that study runs, the benefit is a hypothesis. This is a reusable reasoning pattern, not a reported experiment.</p>
+</div>
+<p class="takeaway"><strong>Your next step should be an obligation, not a mood.</strong> “Check whether this assumption holds in the cited source” is more useful than “research more.”</p>
+<div class="practice"><h3>Try it</h3><p>Close today's work with three lines: what changed in my understanding; which consequential claim is least supported; what exact action would reduce that uncertainty next?</p></div>
+</section>

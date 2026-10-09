@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Curated standalone publication; author QA, not independent certification",
+  "guide_bytes": 438083,
+  "guide_sha256": "cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76",
+  "aliases_byte_identical": true,
+  "normal_and_pilot_builds": "passed",
+  "static_checks": "passed",
+  "full_and_pilot_browser_regression": "passed",
+  "javascript_syntax_checks": "passed",
+  "private_provenance_omitted": [
+    "absolute font-workspace paths",
+    "private Paper workspace links",
+    "provider retrieval identifiers"
+  ],
+  "public_source_scope_preserved": true,
+  "application_script_and_styles_unchanged": true,
+  "publication_changes": "Public documentation and embedded MIT notice; curated metadata, test-fixture paths and CHROME_BIN runner override. Accepted interface/runtime otherwise unchanged.",
+  "screenshots": {
+    "desktop.png": "df1a5d2e6c33a2e08403057a512eac68bb9bbbca0083b7da88089e56d4dea66a",
+    "mobile.png": "f03999703616b957e4e8496a6711e50dd6eee85c4c549861c0629d79bc86f7f5"
+  },
+  "fixtures": {
+    "pre-apply.html": "cf1cd85307795f0135b17b915e4d4d4cbdeca03cbb4851d3d33d1408beece26b",
+    "hero-before.html": "ac2df655ac8c05007a884d9e353afe8f34c70665fec57ab97c3a81ba88041c87"
+  },
+  "licensing": "MIT for original code, authored text and identity artwork; full separate font OFL notices retained",
+  "accepted_pre_publication_sha256": "ee29b593191fd9088c41861403310fb5f2244de7562f025b9f1117e4700c0b12",
+  "accepted_html_byte_identical_after_removing_only_project_license_node": true,
+  "full_mit_notice_embedded": true,
+  "licensed_visual_comparison": "Desktop exact pixel parity; mobile difference confined to 28 native-scrollbar pixels in a 4x7 box at x386/y0. Authored area excluding 10px scrollbar lane matches. Both current views inspected.",
+  "license_sha256": "287d914d28bb83d79bf58d1c51c5050b537ff8683ee214a2acac360f4429447c"
+}

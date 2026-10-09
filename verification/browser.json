@@ -1,0 +1,726 @@
+{
+  "scope": "Local headless Chrome, self-contained file:// artifacts; author QA, not independent review or research-method certification",
+  "checks": [
+    {
+      "identity": {
+        "title": "Groundwork — research field guide & notebook",
+        "logos": [
+          {
+            "width": 28,
+            "hidden": "true",
+            "focusable": "false",
+            "href": "#top",
+            "label": "\n  \n  \nGroundwork",
+            "strokes": [
+              "rgb(221, 224, 224)",
+              "rgb(255, 144, 48)"
+            ]
+          },
+          {
+            "width": 24,
+            "hidden": "true",
+            "focusable": "false",
+            "href": "#top",
+            "label": "\n  \n  \nGroundwork / Index",
+            "strokes": [
+              "rgb(18, 33, 40)",
+              "rgb(255, 144, 48)"
+            ]
+          }
+        ]
+      },
+      "logo_hover_stationary": true
+    },
+    {
+      "native_document_owner": true,
+      "static_action_labels": 31,
+      "single_underline_states": {
+        "rest": 31,
+        "hover": 31,
+        "focus-visible": 31,
+        "active": 31
+      },
+      "dynamic_single_underline_states": {
+        "rest": 33,
+        "hover": 33,
+        "focus-visible": 33,
+        "active": 33
+      },
+      "real_hero_hover_single_underline": true,
+      "hero_original_colors_restored": {
+        "rest": {
+          "label": "rgb(221, 224, 224)",
+          "arrow": "rgb(221, 224, 224)",
+          "line": "rgb(221, 224, 224)",
+          "scale": 0,
+          "outline": "3px",
+          "focusVisible": false,
+          "begin": "rgb(255, 144, 48)"
+        },
+        "hover": {
+          "label": "rgb(221, 224, 224)",
+          "arrow": "rgb(221, 224, 224)",
+          "line": "rgb(221, 224, 224)",
+          "scale": 1,
+          "outline": "3px",
+          "focusVisible": false,
+          "begin": "rgb(255, 144, 48)"
+        },
+        "exit": {
+          "label": "rgb(221, 224, 224)",
+          "arrow": "rgb(221, 224, 224)",
+          "line": "rgb(221, 224, 224)",
+          "scale": 0,
+          "outline": "3px",
+          "focusVisible": false,
+          "begin": "rgb(255, 144, 48)"
+        },
+        "keyboard": {
+          "label": "rgb(221, 224, 224)",
+          "arrow": "rgb(221, 224, 224)",
+          "line": "rgb(221, 224, 224)",
+          "scale": 1,
+          "outline": "2px",
+          "focusVisible": true,
+          "begin": "rgb(255, 144, 48)"
+        },
+        "reduced_motion": true,
+        "forced_colors_system_line_and_focus": true,
+        "coarse_pointer_rest": {
+          "label": "rgb(221, 224, 224)",
+          "arrow": "rgb(221, 224, 224)",
+          "line": "rgb(221, 224, 224)",
+          "scale": 0,
+          "outline": "3px",
+          "focusVisible": false,
+          "begin": "rgb(255, 144, 48)"
+        }
+      },
+      "identity_no_hover_underline": [
+        {
+          "selector": ".identity-brand",
+          "hover": true,
+          "decoration": "none",
+          "logo": "none",
+          "border": "0px"
+        },
+        {
+          "selector": ".identity-rail",
+          "hover": true,
+          "decoration": "none",
+          "logo": "none",
+          "border": "1px"
+        }
+      ],
+      "identity_keyboard_focus": true,
+      "field": {
+        "focus": "note-method",
+        "focusVisible": true,
+        "border": "1px",
+        "outline": "0px",
+        "resize": "vertical",
+        "track": "rgba(0, 0, 0, 0)",
+        "barWidth": "10px",
+        "thumbBorder": "3px",
+        "thumbClip": "padding-box",
+        "thumbColor": "color(srgb 0.442353 0.303529 0.169412)",
+        "scrollWidth": "auto",
+        "legacy": true
+      },
+      "contrast": {
+        "borderAgainstField": 3.9080955187554127,
+        "borderAgainstNotebook": 3.3173948614888893
+      },
+      "native_scroll": {
+        "field": 40,
+        "rail": 40,
+        "pageUnchanged": true
+      },
+      "native_resize_handle": true,
+      "hover": {
+        "rest": {
+          "scale": 0,
+          "duration": "0.18s",
+          "rule": "0.75px",
+          "labelTransform": "none",
+          "parentDecoration": "none"
+        },
+        "mid": {
+          "scale": 0.721849,
+          "duration": "0.3s",
+          "rule": "0.75px",
+          "labelTransform": "none",
+          "parentDecoration": "none"
+        },
+        "reversed": {
+          "scale": 0.157794,
+          "duration": "0.18s",
+          "rule": "0.75px",
+          "labelTransform": "none",
+          "parentDecoration": "none"
+        },
+        "hover": {
+          "scale": 1,
+          "duration": "0.3s",
+          "rule": "0.75px",
+          "labelTransform": "none",
+          "parentDecoration": "none"
+        }
+      },
+      "repeat_and_interruption": true,
+      "disabled_rest": true,
+      "keyboard_focus": true,
+      "reduced_motion": true,
+      "forced_colors_focus": true,
+      "dynamic_context_labels": true,
+      "touch": {
+        "coarse": true,
+        "focus": "field-method",
+        "documentFocused": true,
+        "fieldMatchesFocus": true,
+        "fieldClass": "field",
+        "fieldOutlineStyle": "solid",
+        "focusRules": [
+          [
+            ".field:focus",
+            "1px solid var(--ink)"
+          ]
+        ],
+        "fieldOutline": "1px",
+        "duration": "0s",
+        "overflow": false,
+        "hitAreas": true
+      },
+      "notes_selection_and_dirty_state_preserved": true
+    },
+    {
+      "content_led_hero": true,
+      "comparisons": [
+        {
+          "width": 1440,
+          "before": {
+            "hero": {
+              "x": 0,
+              "y": 101,
+              "width": 1430,
+              "height": 610
+            },
+            "minimum": "610px",
+            "padding": [
+              "74px",
+              "64.8px",
+              "28px",
+              "64.8px"
+            ],
+            "gap": "30px",
+            "children": [
+              {
+                "x": 383.390625,
+                "y": 175,
+                "width": 590.921875,
+                "height": 181.25,
+                "font": "88px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 383.390625,
+                "y": 386.25,
+                "width": 577.28125,
+                "height": 94.5,
+                "font": "21px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 383.390625,
+                "y": 510.75,
+                "width": 390.265625,
+                "height": 54,
+                "font": "18px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 711,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": false
+          },
+          "after": {
+            "hero": {
+              "x": 0,
+              "y": 101,
+              "width": 1430,
+              "height": 491.75
+            },
+            "minimum": "0px",
+            "padding": [
+              "74px",
+              "64.8px",
+              "28px",
+              "64.8px"
+            ],
+            "gap": "30px",
+            "children": [
+              {
+                "x": 383.390625,
+                "y": 175,
+                "width": 590.921875,
+                "height": 181.25,
+                "font": "88px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 383.390625,
+                "y": 386.25,
+                "width": 577.28125,
+                "height": 94.5,
+                "font": "21px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 383.390625,
+                "y": 510.75,
+                "width": 390.265625,
+                "height": 54,
+                "font": "18px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 592.75,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": true
+          },
+          "readingEntryEarlierBy": 118.25
+        },
+        {
+          "width": 900,
+          "before": {
+            "hero": {
+              "x": 0,
+              "y": 101,
+              "width": 890,
+              "height": 570
+            },
+            "minimum": "570px",
+            "padding": [
+              "74px",
+              "30px",
+              "28px",
+              "30px"
+            ],
+            "gap": "30px",
+            "children": [
+              {
+                "x": 229.1875,
+                "y": 175,
+                "width": 374.703125,
+                "height": 114.9375,
+                "font": "55.8px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 229.1875,
+                "y": 319.9375,
+                "width": 577.28125,
+                "height": 94.5,
+                "font": "21px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 229.1875,
+                "y": 444.4375,
+                "width": 390.265625,
+                "height": 54,
+                "font": "18px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 671,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": false
+          },
+          "after": {
+            "hero": {
+              "x": 0,
+              "y": 101,
+              "width": 890,
+              "height": 425.4375
+            },
+            "minimum": "0px",
+            "padding": [
+              "74px",
+              "30px",
+              "28px",
+              "30px"
+            ],
+            "gap": "30px",
+            "children": [
+              {
+                "x": 229.1875,
+                "y": 175,
+                "width": 374.703125,
+                "height": 114.9375,
+                "font": "55.8px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 229.1875,
+                "y": 319.9375,
+                "width": 577.28125,
+                "height": 94.5,
+                "font": "21px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 229.1875,
+                "y": 444.4375,
+                "width": 390.265625,
+                "height": 54,
+                "font": "18px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 526.4375,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": true
+          },
+          "readingEntryEarlierBy": 144.5625
+        },
+        {
+          "width": 390,
+          "before": {
+            "hero": {
+              "x": 0,
+              "y": 122.796875,
+              "width": 390,
+              "height": 550
+            },
+            "minimum": "550px",
+            "padding": [
+              "48px",
+              "22px",
+              "24px",
+              "22px"
+            ],
+            "gap": "25px",
+            "children": [
+              {
+                "x": 22,
+                "y": 170.796875,
+                "width": 301.171875,
+                "height": 94.15625,
+                "font": "44.85px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 22,
+                "y": 289.953125,
+                "width": 346,
+                "height": 114,
+                "font": "19px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 22,
+                "y": 428.953125,
+                "width": 346,
+                "height": 112.390625,
+                "font": "17px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 672.796875,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": false
+          },
+          "after": {
+            "hero": {
+              "x": 0,
+              "y": 122.796875,
+              "width": 390,
+              "height": 442.546875
+            },
+            "minimum": "0px",
+            "padding": [
+              "48px",
+              "22px",
+              "24px",
+              "22px"
+            ],
+            "gap": "25px",
+            "children": [
+              {
+                "x": 22,
+                "y": 170.796875,
+                "width": 301.171875,
+                "height": 94.15625,
+                "font": "44.85px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 22,
+                "y": 289.953125,
+                "width": 346,
+                "height": 114,
+                "font": "19px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 22,
+                "y": 428.953125,
+                "width": 346,
+                "height": 112.390625,
+                "font": "17px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 565.34375,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": true
+          },
+          "readingEntryEarlierBy": 107.453125
+        },
+        {
+          "width": 320,
+          "before": {
+            "hero": {
+              "x": 0,
+              "y": 122.796875,
+              "width": 320,
+              "height": 550
+            },
+            "minimum": "550px",
+            "padding": [
+              "48px",
+              "22px",
+              "24px",
+              "22px"
+            ],
+            "gap": "25px",
+            "children": [
+              {
+                "x": 22,
+                "y": 170.796875,
+                "width": 276,
+                "height": 135.421875,
+                "font": "43px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 22,
+                "y": 331.21875,
+                "width": 276,
+                "height": 142.5,
+                "font": "19px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 22,
+                "y": 498.71875,
+                "width": 276,
+                "height": 112.390625,
+                "font": "17px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 672.796875,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": false
+          },
+          "after": {
+            "hero": {
+              "x": 0,
+              "y": 122.796875,
+              "width": 320,
+              "height": 512.3125
+            },
+            "minimum": "0px",
+            "padding": [
+              "48px",
+              "22px",
+              "24px",
+              "22px"
+            ],
+            "gap": "25px",
+            "children": [
+              {
+                "x": 22,
+                "y": 170.796875,
+                "width": 276,
+                "height": 135.421875,
+                "font": "43px",
+                "text": "Research,made intelligible."
+              },
+              {
+                "x": 22,
+                "y": 331.21875,
+                "width": 276,
+                "height": 142.5,
+                "font": "19px",
+                "text": "From a good question to a claim you can defend. An extensive guide to the methods, words and judgments that make inquiry rigorous."
+              },
+              {
+                "x": 22,
+                "y": 498.71875,
+                "width": 276,
+                "height": 112.390625,
+                "font": "17px",
+                "text": "Begin the guide Open the notebook"
+              }
+            ],
+            "readingEntry": 635.109375,
+            "overflow": false,
+            "contained": true,
+            "paddingFits": true
+          },
+          "readingEntryEarlierBy": 37.6875
+        }
+      ],
+      "enlarged_text_fixture_150_percent": [
+        {
+          "width": 1440,
+          "heightBefore": 491.75,
+          "heightAfter": 777.609375,
+          "contained": true,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "heightBefore": 442.546875,
+          "heightAfter": 723.609375,
+          "contained": true,
+          "overflow": false
+        }
+      ],
+      "scope": "Only hero text enlarged synthetically; not browser zoom/screen-reader/native-device certification"
+    },
+    {
+      "desktop": {
+        "overflow": false,
+        "chapters": 21,
+        "glossary": 134,
+        "sans": true,
+        "mono": true,
+        "fontFaces": [
+          {
+            "family": "Archivo",
+            "status": "loaded"
+          },
+          {
+            "family": "Commit Mono",
+            "status": "loaded"
+          }
+        ],
+        "fontRoles": {
+          "body": "Archivo, sans-serif",
+          "heading": "Archivo, sans-serif",
+          "control": "Archivo, sans-serif",
+          "note": "\"Commit Mono\", monospace",
+          "annotation": "\"Commit Mono\", monospace"
+        },
+        "layout": [
+          64.796875,
+          356.796875,
+          1168.796875
+        ],
+        "notebook": 10,
+        "links": true,
+        "h1": 1
+      }
+    },
+    {
+      "keyboard_skip_focus": true,
+      "storage_denial_fallback": true,
+      "print_full_detail": true,
+      "print_disclosure_restore": true,
+      "current_chapter_marker": true
+    },
+    {
+      "mobile": {
+        "overflow": false,
+        "searchVisible": true,
+        "ctaBottom": 479.34375
+      }
+    },
+    {
+      "responsive_widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "page_overflow": false
+    },
+    {
+      "pilot": false,
+      "apply_actions": 21,
+      "existing_text_and_whitespace_preserved": true,
+      "explicit_only_context": true,
+      "duplicate_safe": true,
+      "context_dirty_state": true,
+      "exact_return_and_focus": true,
+      "native_back_forward": true,
+      "keyboard_apply": true,
+      "mobile_no_text_focus": true,
+      "export_context_separate": true,
+      "print_context": true,
+      "removal_preserves_notes": true,
+      "multiple_contexts": true,
+      "compact_selected_context": true,
+      "older_context_print_and_restore": true,
+      "long_notes": true,
+      "all_ten_fields": true,
+      "bookmark_unchanged": true
+    },
+    {
+      "left_nav_right_path": true,
+      "in_page_notebook": true,
+      "right_path_active_location": true,
+      "search": true,
+      "no_results": true,
+      "intuition_toggle": true,
+      "bookmark_persistence": true,
+      "reduced_motion": true,
+      "no_js_reading": true,
+      "no_js_apply_return": true,
+      "notebook_export": true,
+      "print_mirror": true,
+      "print_notes_scope": true
+    },
+    {
+      "remote_requests": [],
+      "browser_exceptions": []
+    }
+  ],
+  "screenshots": [
+    "underline-hero-hover-desktop.png",
+    "hero-keyboard-desktop.png",
+    "identity-no-underline-hover-desktop.png",
+    "micro-field-focus-desktop.png",
+    "micro-actions-rest-desktop.png",
+    "micro-actions-hover-desktop.png",
+    "micro-actions-keyboard-desktop.png",
+    "micro-field-mobile.png",
+    "underline-hero-mobile.png",
+    "desktop.png",
+    "reading-desktop.png",
+    "statistics.png",
+    "sources.png",
+    "mobile.png",
+    "reading-mobile.png",
+    "notebook-desktop.png",
+    "notebook-mobile.png",
+    "apply-arrival-desktop.png",
+    "apply-arrival-mobile.png",
+    "apply-return-mobile.png",
+    "apply-multiple-mobile.png"
+  ],
+  "capture_directory": ".impeccable/review/groundwork",
+  "status": "passed"
+}

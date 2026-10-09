@@ -1,0 +1,130 @@
+[
+  {
+    "id": "S01",
+    "title": "Scientific Method",
+    "publisher": "Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/scientific-method/",
+    "use": "Philosophical orientation: methodology is contested and plural; no single recipe is imposed across every discipline.",
+    "coverage": "Firecrawl targeted answer; not the full entry. No extracted quotation is reproduced as a verified literal quote."
+  },
+  {
+    "id": "S02",
+    "title": "PRISMA 2020",
+    "publisher": "PRISMA",
+    "url": "https://www.prisma-statement.org/prisma-2020",
+    "use": "Reporting guideline, checklists and flow diagrams for systematic reviews. Reporting is distinct from conduct and validity.",
+    "coverage": "Official overview page text read. Linked statement and elaboration papers were not read in full for this guide."
+  },
+  {
+    "id": "S03",
+    "title": "PRISMA extension for scoping reviews",
+    "publisher": "PRISMA",
+    "url": "https://www.prisma-statement.org/scoping",
+    "use": "Scoping reviews map evidence/concepts and use a distinct reporting extension, PRISMA-ScR.",
+    "coverage": "Official extension page text read; checklist PDFs and linked papers not read in full."
+  },
+  {
+    "id": "S04",
+    "title": "Chapter 4: Searching for and selecting studies",
+    "publisher": "Cochrane Handbook",
+    "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04",
+    "use": "Search coverage, sources, documentation and selection. This is intervention-review guidance; not a universal method for every field.",
+    "coverage": "Search excerpts and focused Firecrawl extraction; not the entire handbook."
+  },
+  {
+    "id": "S05",
+    "title": "Preregistration",
+    "publisher": "Center for Open Science",
+    "url": "https://www.cos.io/initiatives/prereg",
+    "use": "Distinguish planned confirmatory analyses from valuable exploratory work; report deviations transparently.",
+    "coverage": "Selected FAQ passages/search excerpts and targeted extraction, not every linked study."
+  },
+  {
+    "id": "S06",
+    "title": "ASA statement on statistical significance and p-values — release notice",
+    "publisher": "American Statistical Association · 2016",
+    "url": "https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf",
+    "use": "Six principles: p-values are not posterior hypothesis probabilities, effect size, practical importance or substitutes for reasoning.",
+    "coverage": "All three pages of the official notice extracted/read. The separate journal statement and commentaries were not all read."
+  },
+  {
+    "id": "S07",
+    "title": "Confidence limits for the mean",
+    "publisher": "NIST/SEMATECH e-Handbook",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+    "use": "Frequentist confidence intervals and their long-run interpretation under assumptions.",
+    "coverage": "Page text read. Extracted mathematical layout was imperfect; the guide does not copy its mangled equations."
+  },
+  {
+    "id": "S08",
+    "title": "Standards for reporting qualitative research (SRQR)",
+    "publisher": "EQUATOR Network",
+    "url": "https://www.equator-network.org/reporting-guidelines/srqr/",
+    "use": "Locate appropriate qualitative reporting guidance; reporting standards are not a universal epistemology or proof of quality.",
+    "coverage": "Registry page read; not a claim of full reading of O’Brien et al.’s underlying paper."
+  },
+  {
+    "id": "S09",
+    "title": "The Belmont Report",
+    "publisher": "U.S. HHS / OHRP",
+    "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html",
+    "use": "Respect for persons, beneficence and justice in human-subject research. Local institutional/jurisdictional rules still apply.",
+    "coverage": "Selected principles and applications through Firecrawl extraction/search passages; not a legal or ethics-approval determination."
+  },
+  {
+    "id": "S10",
+    "title": "The FAIR Guiding Principles",
+    "publisher": "GO FAIR Foundation",
+    "url": "https://www.gofair.foundation/fair-principles",
+    "use": "Findability, accessibility, interoperability, reuse, provenance and licenses; authorization may be needed, not universally required.",
+    "coverage": "Full principles page text read after checking an overbroad generated extraction."
+  },
+  {
+    "id": "S11",
+    "title": "Artifact Review and Badging v1.1",
+    "publisher": "ACM",
+    "url": "https://www.acm.org/publications/policies/artifact-review-and-badging-current",
+    "use": "Separate artifact availability/evaluation from results validation; define reproduction/replication in the policy’s own terms.",
+    "coverage": "Policy text was read earlier in this conversation; version rechecked through Firecrawl here. No badge is awarded by this handbook."
+  },
+  {
+    "id": "S12",
+    "title": "Validating a Lean Proof",
+    "publisher": "Lean Language Reference",
+    "url": "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+    "use": "Trusted targets, statement correspondence, transitive axioms, incomplete proofs and checker trust boundaries.",
+    "coverage": "Relevant official sections read earlier in this conversation and targeted extraction revisited here. No proof tool was executed."
+  },
+  {
+    "id": "S13",
+    "title": "Contributor Role Taxonomy",
+    "publisher": "NISO / CRediT",
+    "url": "https://credit.niso.org/",
+    "use": "Fourteen contributor roles make different contributions visible; use the relevant separate authorship policy.",
+    "coverage": "Official resource hub page read. Linked role pages and every venue’s authorship policy were not individually reviewed."
+  },
+  {
+    "id": "S14",
+    "title": "Approaches to Research",
+    "publisher": "OpenStax · Psychology 2e",
+    "url": "https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research",
+    "use": "Introductory orientation to study approaches, surveys, cases and longitudinal/cross-sectional designs.",
+    "coverage": "Focused Firecrawl extraction only; not the full book. Introductory generalizations are not treated as universal guarantees."
+  },
+  {
+    "id": "S15",
+    "title": "Analyzing Findings",
+    "publisher": "OpenStax · Psychology 2e",
+    "url": "https://openstax.org/books/psychology-2e/pages/2-3-analyzing-findings",
+    "use": "Introductory distinctions among association, assignment, measurement reliability and validity.",
+    "coverage": "Focused extraction. Its overbroad experiment-only causal phrasing was not adopted; see the specialist causal source S16."
+  },
+  {
+    "id": "S16",
+    "title": "Causal inference in statistics: An overview",
+    "publisher": "Judea Pearl · Statistics Surveys 3 (2009), 96–146",
+    "url": "https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf",
+    "use": "Causal/counterfactual inference combines data with explicit assumptions; identification and estimation are distinct operations.",
+    "coverage": "First three PDF pages only: abstract, contents and introduction (printed pp. 96–98), not all 51 pages. DOI 10.1214/09-SS057 confirmed in the source."
+  }
+]

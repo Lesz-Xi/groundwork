@@ -1,0 +1,28 @@
+{
+  "name": "Groundwork",
+  "descriptor": "Research field guide & notebook",
+  "canonical_file": "../../research-field-guide.html",
+  "canonical_sha256": "cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76",
+  "marks": [
+    {
+      "file": "groundwork-mark.svg",
+      "sha256": "aeb334f20919852006d71787d5aafb8557e997896422fe775a6d3a7ee47bc62b",
+      "bytes": 366,
+      "source": "Exact local Paper SVG export; no path reconstruction or font dependency"
+    },
+    {
+      "file": "groundwork-mark-inverse.svg",
+      "sha256": "17d248e242ba4dd2bf88503ac607cf84922e6af8d7b9979d459f8022a7cb9325",
+      "bytes": 366,
+      "source": "Exact local Paper SVG export; no path reconstruction or font dependency"
+    },
+    {
+      "file": "groundwork-mark-mono.svg",
+      "sha256": "7107551c448d953f9f639b5cfc84c98b8e0b0bd3014012725ed2129e4b762f35",
+      "bytes": 366,
+      "source": "Exact local Paper SVG export; no path reconstruction or font dependency"
+    }
+  ],
+  "artwork": "Original vector mark authored in Paper; pinned SVG exports are the builder source.",
+  "name_availability": "Name and trademark availability have not been independently verified."
+}

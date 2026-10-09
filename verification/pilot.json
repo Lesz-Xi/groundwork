@@ -1,0 +1,63 @@
+{
+  "scope": "Local headless Chrome, self-contained file:// artifacts; author QA, not independent review or research-method certification",
+  "checks": [
+    {
+      "identity": {
+        "title": "Groundwork — research field guide & notebook",
+        "logos": [
+          {
+            "width": 28,
+            "hidden": "true",
+            "focusable": "false",
+            "href": "#top",
+            "label": "\n  \n  \nGroundwork",
+            "strokes": [
+              "rgb(221, 224, 224)",
+              "rgb(255, 144, 48)"
+            ]
+          },
+          {
+            "width": 24,
+            "hidden": "true",
+            "focusable": "false",
+            "href": "#top",
+            "label": "\n  \n  \nGroundwork / Index",
+            "strokes": [
+              "rgb(18, 33, 40)",
+              "rgb(255, 144, 48)"
+            ]
+          }
+        ]
+      },
+      "logo_hover_stationary": true
+    },
+    {
+      "pilot": true,
+      "apply_actions": 1,
+      "existing_text_and_whitespace_preserved": true,
+      "explicit_only_context": true,
+      "duplicate_safe": true,
+      "context_dirty_state": true,
+      "exact_return_and_focus": true,
+      "native_back_forward": true,
+      "keyboard_apply": true,
+      "mobile_no_text_focus": true,
+      "export_context_separate": true,
+      "print_context": true,
+      "removal_preserves_notes": true,
+      "multiple_contexts": false,
+      "compact_selected_context": false,
+      "older_context_print_and_restore": false,
+      "long_notes": false,
+      "all_ten_fields": false,
+      "bookmark_unchanged": true
+    },
+    {
+      "remote_requests": [],
+      "browser_exceptions": []
+    }
+  ],
+  "screenshots": [],
+  "capture_directory": ".qa",
+  "status": "passed"
+}

@@ -1,0 +1,134 @@
+Abduction|Developing a plausible explanation for observations. It generates candidates that still need comparison with alternatives, not automatic proof of the best-sounding story.|assumptions
+Abstract|A compressed account of a work's question, approach, contribution and limits. It is a discovery aid, not a substitute for inspecting the supporting argument or methods.|writing
+Accuracy|Closeness to an appropriate target or reference value. A procedure can be highly repeatable yet consistently wrong.|measurement
+Alternative hypothesis|A competing statistical hypothesis defined for a test. Rejecting the null does not establish every substantive explanation compatible with the alternative.|statistics
+Analysis plan|A record of how data or material will be processed and interpreted, including important comparisons, exclusions and uncertainty. Changes should remain visible.|methods
+Anonymization|Reducing identifying information so individuals cannot reasonably be identified under relevant conditions; context and linkage risks matter. It is stronger than merely removing names.|ethics
+Artifact|An inspectable output or object used in research: code, data, a model, instrument, prototype, protocol or document. Its existence is not evidence that its main claim is valid.|architecture
+Assumption|A premise on which an inference or method depends. Some are mathematical stipulations; others are substantive claims that need evidence or sensitivity analysis.|assumptions
+Audit trail|A record of decisions, transformations and interpretations that helps another person reconstruct how the work developed.|long-arc
+Authorship|A responsibility and credit relationship governed by relevant disciplinary, venue and institutional criteria. Contributor roles and acknowledgments are related but not identical.|ethics
+Baseline|A justified reference condition or prior method against which an approach is compared. A deliberately weak baseline can inflate apparent improvement.|architecture
+Bayes factor|A comparison of marginal likelihoods under specified competing models. Its interpretation depends on the models and priors; it is not directly the posterior probability of a hypothesis.|statistics
+Bayesian updating|Combining a prior distribution with the likelihood of observed data to obtain a posterior distribution, conditional on the model.|statistics
+Bias|Systematic distortion relative to a target inference or measurement. More observations can reduce sampling noise while leaving the bias intact.|synthesis
+Blinding|Limiting knowledge of assignments or expected outcomes where appropriate to reduce particular influences on behavior or assessment. It does not eliminate every bias.|methods
+Case study|An in-depth investigation of a bounded case or cases. Its inferential value depends on case selection, context, evidence and analytic logic, not just small sample size.|methods
+Causal effect|A contrast between outcomes under specified interventions or conditions. The intervention, comparison, population and timescale must be clear.|causality
+Causal identification|Establishing how a causal target can be recovered from available information under explicit assumptions. It is distinct from numerical estimation.|causality
+Citation|An attribution and locator connecting a statement to a source. It does not guarantee that the source exists as described, supports the wording, or is correct.|reading
+Citation chasing|Following references backward or later citing works forward. It expands discovery but can amplify the visibility of already well-connected literature.|search
+Claim|A statement that can carry a support obligation. Its meaning includes qualifiers, domain, assumptions and intended strength.|reading
+Claim ledger|A structured map of consequential statements to their sources, assumptions, checks, objections and current support. It improves traceability, not truth by itself.|long-arc
+Coding|Applying analytic labels to qualitative material or other observations according to an explicit approach. A code is not automatically a theme or explanation.|qualitative
+Collider|A variable represented as a common effect of other variables in a causal model. Conditioning on it can create an association and bias an inference.|causality
+Comprehensive|Covering important relevant dimensions within a stated scope. It does not establish that literally every relevant source has been found.|scope
+Conceptual framework|An organized set of concepts and proposed relationships that guides inquiry. It should clarify questions and assumptions rather than rename them impressively.|formal
+Confidence interval|An interval produced by a procedure with a specified long-run coverage property under assumptions. It is not ordinarily a posterior probability statement about a fixed parameter.|statistics
+Confirmatory analysis|Testing specified expectations with analysis decisions set independently of the evidence used for that test, while making deviations and assumptions transparent.|assumptions
+Confounder|A variable or factor that offers a competing explanation for an exposure–outcome association, often represented as a cause of both in a causal model.|causality
+Construct|A concept of interest, such as trust or learning, that requires a justified relationship to the observations or arguments used to study it.|measurement
+Construct validity|The adequacy of interpreting an operation or measure as capturing the intended construct. A convenient proxy may not support a broad conceptual claim.|measurement
+Contribution|What completed research adds to knowledge or practice. It is not simply the activity performed, the software built, or the novelty promised.|prior-art
+Controlled vocabulary|A standardized set of indexing terms used by a database or field. It can complement free-text synonyms; exact syntax and indexing vary by platform.|search
+Counterexample|A case that violates a statement's claimed conditions and conclusion, thereby refuting that statement in its stated form. A case outside its assumptions is not a counterexample.|formal
+Counterfactual|An outcome or state considered under an alternative condition or intervention. Answering such a question requires a model and assumptions, not only observed association.|causality
+Credible interval|A Bayesian interval summarizing posterior probability under a specified model, data and prior. It should not be silently interchanged with a confidence interval.|statistics
+CRediT|A taxonomy of contributor roles that helps describe who did what in a research output. It does not replace the relevant authorship policy.|ethics
+Critical appraisal|Examining a source's design, conduct, analysis, reporting and applicability for the inference you want to use. It is not a prestige score.|synthesis
+Data dictionary|Documentation of variables, units, permissible values, coding and meaning. It helps prevent datasets from becoming uninterpretable collections of columns.|measurement
+Data leakage|Information entering model development or evaluation that would not be available at the intended decision point, or that compromises a supposed holdout boundary.|measurement
+Deduction|Deriving a conclusion that follows logically from premises. A valid inference does not, on its own, establish that the premises are true or applicable.|assumptions
+Deduplication|Identifying repeated records or representations. Removing duplicate citations does not automatically remove multiple reports of the same study or dataset.|selection
+Definition|A stipulation or clarification of meaning used in an argument. Useful definitions must remain consistent, and empirical adequacy is a separate question.|formal
+Dependent evidence|Evidence sharing participants, data, assumptions, procedures or other influences. Treating it as independent corroboration can exaggerate confidence.|synthesis
+Dissemination|Communicating research through papers, repositories, talks or other forms. The reach of communication is distinct from the strength of the underlying evidence.|writing
+DOI|A persistent identifier used to locate an object such as a publication or dataset. It identifies an object; it does not certify quality, truth or peer-review status.|search
+Effect size|A measure of the magnitude of a contrast or relationship on a specified scale. Importance depends on context, uncertainty and the consequences of the effect.|statistics
+Eligibility criteria|Rules determining which sources, studies, cases or participants belong in a specified inquiry. They should not be adjusted invisibly to favor a result.|selection
+Empirical|Grounded in observations or experience collected and interpreted through a method. Empirical evidence still depends on measurement and inference choices.|research
+Epistemology|The study or working account of knowledge and justification: what counts as knowing, and what warrants a claim.|assumptions
+Equivalence test|An analysis designed to assess whether a difference is small enough relative to prespecified meaningful bounds. It is not simply a non-significant ordinary test.|statistics
+Estimand|The precise quantity or contrast the inquiry aims to estimate, including the relevant population, conditions and outcome definition.|causality
+Estimation|Using observations and a method to obtain a numerical estimate of a target. A precise estimate does not fix an unidentified or poorly defined target.|statistics
+Ethics review|Assessment under applicable institutional and regulatory requirements for research conduct, especially where people, animals or sensitive information are involved.|ethics
+Evidence|Information or argument that bears on a particular claim through a justified connection. A source can be relevant without decisively supporting the conclusion.|research
+Exclusion reason|A recorded explanation for why a candidate source or case did not meet eligibility criteria. Lack of access must not masquerade as an assessed methodological exclusion.|selection
+Exhaustive|An ambition to find all relevant material within a specified search universe. It is a bounded coverage claim, not a promise of omniscience.|scope
+Exclusive|Restricted to some people or things, or excluding others. It does not mean exhaustive.|scope
+Exploratory analysis|Investigating patterns, developing questions or generating hypotheses. Valuable discovery work should not be disguised afterward as a prespecified confirmatory test.|assumptions
+External validity|The justification for extending an inference beyond the studied setting, population or conditions. A result's local credibility does not establish broad applicability.|measurement
+FAIR|Findable, Accessible, Interoperable and Reusable principles for digital research resources. Appropriate access restrictions can coexist with FAIR practice.|reproducibility
+Falsification|Subjecting a claim to evidence or argument that could contradict it. A failed auxiliary assumption or measurement complicates what exactly an empirical test has refuted.|formal
+Formal verification|Checking specified formal properties relative to a formal system and trusted process. The match to an informal requirement remains a separate obligation.|formal
+Generalization|Extending a conclusion beyond the observed cases. Its warrant depends on design, assumptions, context and the kind of inference, not only sample size.|methods
+Grey literature|Relevant material outside conventional commercial academic publishing, such as reports or theses. Discovery and quality assessment may require different strategies.|search
+HARKing|Presenting a hypothesis developed after seeing results as though it had been specified beforehand. Transparent exploratory reporting avoids that misrepresentation.|statistics
+Heterogeneity|Variation among studies, effects or contexts. Its source may be substantive, methodological or statistical; a single statistic does not fully explain it.|synthesis
+Hypothesis|A candidate answer or expectation that can be investigated or criticized. It should not be treated as established merely because it is plausible.|questions
+IMRaD|Introduction, Methods, Results and Discussion: a common empirical paper structure, not a universal requirement for every research genre.|writing
+Independence|A property of observations, sources or reviews relevant to inference. Distinct-looking records or multiple agents can still share important dependencies.|synthesis
+Induction|Reasoning beyond observed cases toward a more general claim. The extension needs a justification tied to sampling, context or the structure of the phenomenon.|assumptions
+Inference|The reasoning that connects evidence or premises to a conclusion. Different kinds of inference require different assumptions and checks.|research
+Informed consent|A context-sensitive process supporting voluntary participation with adequate understanding, rather than merely obtaining a signature.|ethics
+Internal validity|The credibility of an inference within a study; often used for whether an observed contrast supports the intended causal interpretation.|measurement
+Intervention|A specified change or assignment whose consequences are of interest. It must be defined precisely enough to distinguish it from merely observing an exposure.|causality
+Literature review|An examination and synthesis of relevant scholarly work. Its type, scope, search method and appraisal obligations should be stated.|reviews
+Mechanism|An account of how a phenomenon or artifact produces an outcome. A descriptive correlation, label or flowchart does not automatically establish one.|architecture
+Mediator|A variable represented along a proposed causal pathway between an exposure/intervention and an outcome. Its role depends on the causal model and question.|causality
+Meta-analysis|A statistical synthesis of appropriately comparable estimates. Pooling does not remove bias, incompatibility or dependence among the inputs.|reviews
+Metadata|Information describing a source or object, such as title, authors, version or identifier. Resolving metadata is not the same as reading or validating the object.|search
+Method|A procedure used to investigate, collect, analyze, interpret, construct or prove something.|methods
+Methodology|The rationale and logic that justify how a set of methods can answer a question. It is more than a list of tools.|assumptions
+Mixed methods|Intentional integration of quantitative and qualitative components to address a research question. Parallel disconnected analyses do not automatically achieve integration.|methods
+Model|A selective representation of something for a purpose. Its usefulness and limits depend on which distinctions it preserves and which it leaves out.|formal
+Novelty|A defensible difference from relevant existing work. New to the author is not necessarily new to the field, and novelty alone does not establish importance.|prior-art
+Null hypothesis|A specified statistical hypothesis used as a reference in a test. Its rejection does not automatically prove a favored mechanism.|statistics
+Ontology|An account of what kinds of things exist or are treated as real in an inquiry. Ontological choices can affect what is measured and explained.|assumptions
+Operationalization|Specifying how a concept will be observed, measured or otherwise represented in an investigation.|measurement
+P-value|A probability of a statistic at least as extreme as the observed one under a specified null model and test rule. It is not the probability that the null is true.|statistics
+Parameter|A quantity in a model or population that is treated as unknown and may be estimated. Its meaning depends on the model and target.|statistics
+Peer review|Critical assessment by relevant reviewers under a venue's process. It is scrutiny, not a guarantee of validity or universal consensus.|writing
+Pilot study|Preliminary work that assesses feasibility or refines procedures. Its purpose, changes and relationship to later confirmatory work should be explicit.|methods
+Population|The set of units about which a question is asked. The accessible sample may differ from this target in consequential ways.|methods
+Positivity / overlap|A causal-inference requirement that relevant treatment/comparison possibilities occur for the covariate patterns needed for the target effect, under the chosen design.|causality
+Power|The probability a test rejects the null under a specified alternative and design. It is not a fixed property of a sample size alone.|statistics
+Precision|How tightly an estimate is determined under a procedure. High precision does not guarantee low bias or valid interpretation.|measurement
+Prediction interval|An interval for future observations under a model, distinct from an interval for an unknown mean or other parameter.|statistics
+Preregistration|A time-stamped record of a research/analysis plan made before the relevant confirmatory test. Deviations and exploratory work remain possible when transparently reported.|assumptions
+Preprint|A publicly shared manuscript version that may precede or lack formal peer review. Cite its exact version and do not infer journal acceptance.|search
+Prior art|Existing relevant ideas, methods, systems or disclosures against which a proposed contribution is compared. Legal patent usage has additional specific rules.|prior-art
+Proof obligation|A statement or step that must be established for a dependent argument to hold. A missing necessary obligation blocks unconditional completion.|formal
+Protocol|A specified plan for how an inquiry or procedure will be conducted, including relevant decisions, responsibilities and boundaries.|long-arc
+Provenance|The origin and transformation history of an object or claim, including versions, sources and responsible actions.|reproducibility
+Pseudonymization|Replacing identifiers while potentially retaining a way to reconnect records to people. It is not a guarantee of anonymity.|ethics
+Publication bias|Distortion arising when whether or how work becomes available depends on its results or perceived interest.|selection
+Purposive sampling|Selecting cases for their relevance to an inquiry's aims. It is not automatically a probability sample for estimating population prevalence.|qualitative
+Qualitative research|Inquiry into meaning, experience, practice, process or context through appropriate interpretive methodologies. It is not simply small-sample statistics.|qualitative
+Random assignment|Allocating units to conditions by a chance mechanism. It is distinct from randomly sampling a population and does not solve every validity problem.|causality
+Reflexivity|Examining how the researcher's position, decisions and relationships shape an inquiry. It supports accountability rather than making interpretation disappear.|qualitative
+Registered report|A publication format that typically reviews the question and proposed methods before results are known. Exact commitments and acceptance conditions depend on the venue.|writing
+Reliability|Consistency of a measure or procedure under specified conditions. It does not by itself show that the intended construct was captured.|measurement
+Replication|A term for repeating or independently testing results whose operational definition varies by community. State what was repeated, by whom, with which data/artifacts.|reproducibility
+Reproducibility|The ability to obtain or examine results again under declared conditions; terminology varies. Specify whether this means rerunning code, repeating procedures or obtaining new evidence.|reproducibility
+Research gap|A consequential absence, unresolved issue or inadequacy in existing knowledge or practice. Merely unstudied is not automatically important.|prior-art
+Retraction|A formal withdrawal or major warning about a publication. Preserve its status and reconsider dependent affirmative claims; the source can still be studied as an object.|reproducibility
+Risk of bias|The risk of systematic error in a result or inference because of design, conduct, analysis or reporting. It is not identical to poor prose or lack of prestige.|synthesis
+Robustness|How a conclusion behaves under relevant alternative assumptions, specifications or conditions. Passing a few convenient variations is not universal robustness.|synthesis
+Sample|The units actually included or observed. Size alone does not establish representativeness, independence or adequacy for the question.|methods
+Saturation|A family of qualitative sufficiency concepts with different meanings across approaches. Explain what has become sufficient and why that criterion fits.|qualitative
+Scoping review|A review that maps concepts, evidence types or the extent of a literature using an explicit approach. It need not estimate one pooled effect.|reviews
+Sensitivity analysis|Examining how results change under plausible alternative assumptions, choices or values. It reveals dependence; it does not prove the chosen assumption true.|synthesis
+Standard deviation|A measure of spread among observations. It is not the same as the standard error of an estimated quantity.|statistics
+Standard error|A measure of an estimator's variability under a model/design. It describes estimation uncertainty, not all possible sources of error.|statistics
+Statistical significance|A relation between a test result and a chosen decision threshold. It does not establish effect importance, causality or practical usefulness.|statistics
+Synthesis|An accountable account of relationships across evidence or arguments: convergence, contrast, explanation, boundary or unresolved conflict—not merely a sequence of summaries.|synthesis
+Systematic review|A review addressing a defined question with explicit, organized methods for eligibility, search, selection, appraisal and synthesis.|reviews
+Theory|An explanatory/conceptual system whose meaning varies by discipline. Distinguish empirical explanation, mathematical theory, model, framework and conjecture.|formal
+Transferability|Reasoned applicability of insights to other contexts, often emphasized in qualitative inquiry. Rich context helps readers judge it; it is not automatic universality.|qualitative
+Triangulation|Using multiple perspectives, methods, sources or investigators to examine a question. Disagreement can be informative; convergence does not guarantee independent confirmation.|qualitative
+Uncertainty|Limits on what is known or how precisely it is known. Sampling variability, measurement error, model uncertainty and missing knowledge require different treatments.|statistics
+Unit of analysis|The entity about which the analysis makes an inference. It may differ from the unit that produced each recorded observation.|methods
+Validity|The defensibility of an interpretation or inference for its intended use. Different forms of validity address different threats.|measurement
+Verification|Checking specified properties against a defined standard or requirement. The result is limited to the version, procedure and scope actually checked.|architecture
+Warrant|The justified connection that allows evidence or premises to support a conclusion. Making it explicit is central to an inspectable argument.|research

@@ -1,0 +1,26 @@
+{
+  "product_name": "Groundwork",
+  "identity_source": "Paper SVG exports, embedded inline",
+  "chapters": 21,
+  "glossary_terms": 134,
+  "learning_words": 11718,
+  "sources": 16,
+  "notebook_fields": 10,
+  "apply_actions": 21,
+  "handbook_bytes": 438083,
+  "unified_notebook": true,
+  "offline_runtime": true,
+  "source_links_external": true,
+  "reference": "www.forgis.com--2026-10-06-0127",
+  "embedded_fonts": [
+    "Archivo",
+    "Commit Mono"
+  ],
+  "typography_status": "approved-free-pair",
+  "exact_reference_typography_target": false,
+  "reference_fonts_not_used": [
+    "At Hauss",
+    "PP Fraktion Mono"
+  ],
+  "pilot": false
+}

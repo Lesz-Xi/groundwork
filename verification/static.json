@@ -1,0 +1,33 @@
+{
+  "scope": "Stdlib structural checks against the frozen pre-Apply test fixture; no scientific or full accessibility certification",
+  "status": "passed",
+  "product_name": "Groundwork",
+  "header_descriptor_removed": true,
+  "paper_marks_embedded_exactly": 2,
+  "branded_export_headings_with_stable_filenames": true,
+  "unique_ids": 278,
+  "internal_anchors_resolve": true,
+  "chapter_content_unchanged": 21,
+  "glossary_and_source_records_unchanged": true,
+  "apply_actions": 21,
+  "primary_destinations": 10,
+  "h1": 1,
+  "hero_scroll_link_removed": true,
+  "other_hero_actions_preserved": true,
+  "hero_metadata_removed": true,
+  "notebook_fields": 10,
+  "aliases_identical": true,
+  "approved_fonts": [
+    "Archivo",
+    "Commit Mono"
+  ],
+  "static_micro_action_labels": 31,
+  "native_micro_scrollbar_and_single_focus_edge_present": true,
+  "embedded_font_hashes_match_manifest": true,
+  "full_copyright_and_ofl_notices_retained": true,
+  "full_mit_notice_embedded": true,
+  "exact_reference_typography_target": false,
+  "external_runtime_assets": [],
+  "handbook_bytes": 438083,
+  "sha256": "cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76"
+}
