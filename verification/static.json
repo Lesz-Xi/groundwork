@@ -4,6 +4,8 @@
   "product_name": "Groundwork",
   "header_descriptor_removed": true,
   "paper_marks_embedded_exactly": 2,
+  "embedded_svg_browser_icons_exactly": 2,
+  "dark_theme_icon_declared": true,
   "branded_export_headings_with_stable_filenames": true,
   "unique_ids": 278,
   "internal_anchors_resolve": true,
@@ -28,6 +30,6 @@
   "full_mit_notice_embedded": true,
   "exact_reference_typography_target": false,
   "external_runtime_assets": [],
-  "handbook_bytes": 438083,
-  "sha256": "cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76"
+  "handbook_bytes": 439264,
+  "sha256": "7201a4bb985b639d360abfd4ce06d7054e70442776cf9e807dac5b809ed2ba81"
 }

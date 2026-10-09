@@ -1,6 +1,7 @@
 import {testApply} from './qa-apply.mjs';
 import {testMicro} from './qa-micro.mjs';
 import {testHero} from './qa-hero.mjs';
+import {testIcons} from './qa-icons.mjs';
 import {spawn} from 'node:child_process';
 import {mkdtempSync,readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
@@ -42,11 +43,14 @@ try{
  assert(identity.title==='Groundwork — research field guide & notebook'&&identity.logos.length===2&&identity.logos.every(el=>el.hidden==='true'&&el.focusable==='false'&&el.href==='#top'&&el.label.includes('Groundwork'))&&identity.logos[0].width===28&&identity.logos[1].width===24&&identity.logos[0].strokes[0]==='rgb(221, 224, 224)'&&identity.logos[1].strokes[0]==='rgb(18, 33, 40)'&&identity.logos.every(el=>el.strokes[1]==='rgb(255, 144, 48)'),'Groundwork identity mismatch '+JSON.stringify(identity));
  assert(identity.logos[0].label.trim()==='Groundwork','Removed header descriptor reappeared');
  assert(await evaluate(`!document.querySelector('.sitebar .edition,.intro .hero-bottom')&&!document.querySelector('.sitebar').textContent.includes('Personal research edition / 02')&&!document.querySelector('.intro').textContent.includes('one working notebook')`),'Removed hero metadata reappeared');
+ const browserIcons=await testIcons({evaluate,send,assert});
+ writeFileSync(join(out,'browser-icon-specimens.png'),Buffer.from(browserIcons.specimen,'base64'));
+ result.browser_icon_specimen='browser-icon-specimens.png';
  // Logo leaves must not inherit the existing action-arrow hover translation.
  const logoBox=await evaluate(`(()=>{const r=document.querySelector('.identity-brand').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2};})()`);
  await send('Input.dispatchMouseEvent',{type:'mouseMoved',...logoBox});await sleep(350);
  assert(await evaluate(`getComputedStyle(document.querySelector('.identity-brand>.identity-logo')).transform==='none'`),'Identity logo inherited arrow motion');
- await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:1,y:1});result.checks.push({identity,logo_hover_stationary:true});
+ await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:1,y:1});result.checks.push({identity,logo_hover_stationary:true,browser_icons:browserIcons.checks,browser_icon_scope:browserIcons.scope});
  if(pilot) {
    await viewport(1440,1000);await navigate('.qa/pilot.html');
    result.checks.push(await testApply({evaluate,send,viewport,assert,full:false}));

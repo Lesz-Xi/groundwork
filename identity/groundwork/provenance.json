@@ -2,7 +2,7 @@
   "name": "Groundwork",
   "descriptor": "Research field guide & notebook",
   "canonical_file": "../../research-field-guide.html",
-  "canonical_sha256": "cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76",
+  "canonical_sha256": "7201a4bb985b639d360abfd4ce06d7054e70442776cf9e807dac5b809ed2ba81",
   "marks": [
     {
       "file": "groundwork-mark.svg",

@@ -1,18 +1,18 @@
-# Publication verification
+# Release verification
 
 ## Delivered artifact
 
-- Primary: `research-field-guide.html` — **438,083 bytes**.
-- SHA-256: `cbef9e6bfb08b54a8d98d3a490813245a234295fdc15714ea6c097b99439aa76`.
+- Primary: `research-field-guide.html` — **439,264 bytes**.
+- SHA-256: `7201a4bb985b639d360abfd4ce06d7054e70442776cf9e807dac5b809ed2ba81`.
 - `index.html` and `research-notebook.html` are byte-identical aliases.
-- Removing only the added, non-executable MIT-license JSON node yields the accepted pre-publication HTML byte for byte. Presentation, application code and learning content are otherwise unchanged.
+- Removing only the two embedded SVG favicon links yields the initial public release (`cbef9e6b…`) byte for byte. Additionally removing its non-executable MIT-license JSON node yields the accepted private HTML exactly. Presentation, application code and learning content are unchanged.
 - Full MIT copyright/permission text is embedded in the standalone file and checked against `LICENSE`. Embedded font hashes and complete SIL OFL notices are separately checked.
 
 The original guide was developed privately; this repository publishes a curated project, not its surrounding workspace. Absolute font-source paths, private Paper links and provider retrieval identifiers were removed from public metadata. Source-reading boundaries and all rendered citations remain intact. Test fixtures contain no live user notes.
 
 ## Checks performed
 
-The publication copy passed:
+The current browser-icon release passed:
 
 ```sh
 python3 build-standalone.py
@@ -23,12 +23,14 @@ node --check qa-browser.mjs
 node --check qa-apply.mjs
 node --check qa-micro.mjs
 node --check qa-hero.mjs
+node --check qa-icons.mjs
 node qa-browser.mjs
 CHROME_BIN='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' node qa-browser.mjs --pilot
 ```
 
 Environment: Python 3.14.5, Node.js 22.22.1 and local headless Google Chrome on macOS. The runner's configurable browser path was exercised; no server, package installation or API key was required.
 
+- Browser icon: exact primary/inverse SVG export bytes in data URIs, `image/svg+xml`/`sizes="any"`, dark-theme media declaration, image decoding and both strokes rendered at 16/24/32px under emulated light/dark media. The new structural assertion failed on the icon-free baseline and passes on the rebuilt file. This is declaration/rasterization evidence, not native tab-cache or installed-app certification.
 - Structural preservation: IDs, internal anchors, 21 chapter bodies, glossary, source list, notebook field names, aliases and embedded assets.
 - Reading/navigation: search/no-results, intuition, saved place/storage denial, no-JS reading, left navigation and right-path location.
 - Notebook: repeated/multiple Apply attachment, exact return/native history, independent context removal, unchanged answers/whitespace, synthetic Markdown export, print mirrors and disclosure restoration.
@@ -36,7 +38,9 @@ Environment: Python 3.14.5, Node.js 22.22.1 and local headless Google Chrome on 
 - Hero: baseline/current geometry at 1440/900/390/320px widths and a synthetic 150% hero-text fixture at desktop/mobile sizes. The reading entrance advances approximately 118/145/107/38px respectively; padding, child geometry and type stay unchanged.
 - Offline runtime: zero page-initiated HTTP(S) requests and zero captured JavaScript exceptions in the browser suite.
 
-Current desktop/mobile publication screenshots were inspected. Desktop pixels matched the pre-license capture exactly. A 28-pixel mobile difference was confined to native scrollbar paint in a 4×7 region at the right edge; the authored area excluding that scrollbar lane matched. No UI correction was needed.
+Current desktop/mobile screenshots and the 16/24/32px light/dark icon specimens were inspected. Both page screenshots are pixel-identical to the published README screenshot assets; the icon-only change does not alter page rendering. No UI correction was needed. The initial publication's earlier comparison to private captures remains historical evidence in `release.json`.
+
+The requested Impeccable detector pass was degraded because its HTML parser modules were unavailable. Its regex fallback flagged an existing source-reading disclosure cadence; no factual disclosure was rewritten for this icon task. That scan is not a computed-selector, contrast or accessibility certification.
 
 ## Evidence
 

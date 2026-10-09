@@ -61,8 +61,15 @@ def inline_mark(filename, size):
     node.set('class', 'identity-logo'); node.set('aria-hidden', 'true'); node.set('focusable', 'false')
     return ET.tostring(node, encoding='unicode')
 
+def favicon_link(filename, media=None):
+    href = 'data:image/svg+xml;base64,' + base64.b64encode(MARKS[filename]).decode('ascii')
+    condition = ' media="' + escape(media, quote=True) + '"' if media else ''
+    return '<link rel="icon" type="image/svg+xml" sizes="any"' + condition + ' href="' + href + '">'
+
+FAVICONS = favicon_link('groundwork-mark.svg') + favicon_link('groundwork-mark-inverse.svg', '(prefers-color-scheme: dark)')
+
 def document(title, body):
-    return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An extensive, source-linked research learning guide with intuition, technical nuance and practical templates."><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; script-src \'unsafe-inline\'; font-src data:; img-src data:; connect-src \'none\'; base-uri \'none\'; form-action \'none\'"><title>'+escape(title)+'</title><style>'+CSS+'</style></head><body>'+CONTRACT+'\n'+body+'<script>'+JS+'</script><script type="application/json" id="font-license-notices">'+json.dumps({'notice':LICENSES},ensure_ascii=False).replace('<','\\u003c')+'</script><script type="application/json" id="project-license-notices">'+json.dumps({'license':'MIT','notice':PROJECT_LICENSE},ensure_ascii=False).replace('<','\\u003c')+'</script></body></html>'
+    return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An extensive, source-linked research learning guide with intuition, technical nuance and practical templates."><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; script-src \'unsafe-inline\'; font-src data:; img-src data:; connect-src \'none\'; base-uri \'none\'; form-action \'none\'"><title>'+escape(title)+'</title>'+FAVICONS+'<style>'+CSS+'</style></head><body>'+CONTRACT+'\n'+body+'<script>'+JS+'</script><script type="application/json" id="font-license-notices">'+json.dumps({'notice':LICENSES},ensure_ascii=False).replace('<','\\u003c')+'</script><script type="application/json" id="project-license-notices">'+json.dumps({'license':'MIT','notice':PROJECT_LICENSE},ensure_ascii=False).replace('<','\\u003c')+'</script></body></html>'
 
 fields=[
 ('question','The question','What do you want to find out? State the answer type, object, context and why it matters.','Main question:\nAnswer type:\nWhy this matters:'),
@@ -184,5 +191,5 @@ outputs = ('.qa/pilot.html',) if PILOT else ('research-field-guide.html','index.
 for filename in outputs:
     target=ROOT/filename;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(html)
 info=ROOT/('.qa/pilot-build-info.json' if PILOT else 'build-info.json')
-info.write_text(json.dumps({'product_name':'Groundwork','identity_source':'Paper SVG exports, embedded inline','chapters':len(chapters),'glossary_terms':len(gloss),'learning_words':words,'sources':len(SOURCES),'notebook_fields':len(fields),'apply_actions':len(applications),'handbook_bytes':len(html.encode()),'unified_notebook':True,'offline_runtime':True,'source_links_external':True,'reference':'www.forgis.com--2026-10-06-0127','embedded_fonts':['Archivo','Commit Mono'],'typography_status':'approved-free-pair','exact_reference_typography_target':False,'reference_fonts_not_used':['At Hauss','PP Fraktion Mono'],'pilot':PILOT},indent=2)+'\n')
+info.write_text(json.dumps({'product_name':'Groundwork','identity_source':'Paper SVG exports, embedded inline','browser_icons':['groundwork-mark.svg','groundwork-mark-inverse.svg'],'chapters':len(chapters),'glossary_terms':len(gloss),'learning_words':words,'sources':len(SOURCES),'notebook_fields':len(fields),'apply_actions':len(applications),'handbook_bytes':len(html.encode()),'unified_notebook':True,'offline_runtime':True,'source_links_external':True,'reference':'www.forgis.com--2026-10-06-0127','embedded_fonts':['Archivo','Commit Mono'],'typography_status':'approved-free-pair','exact_reference_typography_target':False,'reference_fonts_not_used':['At Hauss','PP Fraktion Mono'],'pilot':PILOT},indent=2)+'\n')
 print(info.read_text())

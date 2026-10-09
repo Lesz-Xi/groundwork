@@ -19,7 +19,7 @@ Its central loop is **read → apply → return**: read a chapter, attach its in
 2. Open **`research-field-guide.html`** in a modern browser. `index.html` and `research-notebook.html` are byte-identical aliases of the same document.
 3. Choose **Begin the guide** to read, or **Open the notebook** to work directly in the ten notebook fields.
 
-For ordinary use, only one HTML file needs to travel. Fonts, styles, scripts, the identity mark and font-license notices are embedded. GitHub's file viewer shows HTML source; download the file and open it locally to use the guide. External source links require internet access when followed.
+For ordinary use, only one HTML file needs to travel. Fonts, styles, scripts, the identity mark, SVG browser icons and font-license notices are embedded. GitHub's file viewer shows HTML source; download the file and open it locally to use the guide. External source links require internet access when followed.
 
 > **Your notes are not automatically saved.** Export them before closing, refreshing, replacing or switching copies of the document. Rebuilding the HTML does not save or migrate an open notebook.
 
@@ -69,6 +69,8 @@ Groundwork does not upload notes or implement application autosave. A bookmark s
 The interface uses a cool-grey reading surface, blue-black opening and orange notebook/action surfaces. Archivo carries headings, prose and controls; Commit Mono carries annotations, code and note fields.
 
 A content-led hero gives way to reading without a fixed-height reservation. Desktop chapter navigation sits on the left, with a separate reading path on the right. Mobile uses native contents disclosures and a single reading column. Native scrolling, text selection, textarea resizing and visible keyboard focus remain in control.
+
+The browser/tab icon reuses the exact pinned Groundwork SVG, embedded as a data URI so it travels with the single HTML file. The approved inverse SVG is declared for dark browser themes. SVG favicon and theme selection support depend on the browser; this does not add an installable PWA, service worker or platform-specific home-screen icons.
 
 The visual direction is Forgis-informed, not a copy of its branding, media, scripts or commercial fonts. The Groundwork mark is original vector artwork authored in Paper and embedded from pinned SVG exports. See [DESIGN.md](DESIGN.md).
 
@@ -130,7 +132,7 @@ CHROME_BIN=/path/to/chrome node qa-browser.mjs --pilot
 
 The runner launches its own temporary headless browser profile and closes it afterward; it does not start an application server or require API keys. Captures and synthetic downloads stay in ignored local QA directories.
 
-Coverage includes internal anchors, content preservation, embedded assets, search/no-results, intuition mode, bookmarks/storage denial, Apply/return and native history, context removal, note/whitespace preservation, Markdown export, print restoration, no-JS reading, keyboard focus, reduced motion, forced-color focus and coarse-pointer arrival. Hero geometry is compared at 1440/900/390/320px widths, with separate synthetic 150% hero-text fixtures.
+Coverage includes exact embedded SVG browser-icon bytes, emulated light/dark icon declarations and SVG rendering at 16/24/32px, internal anchors, content preservation, embedded assets, search/no-results, intuition mode, bookmarks/storage denial, Apply/return and native history, context removal, note/whitespace preservation, Markdown export, print restoration, no-JS reading, keyboard focus, reduced motion, forced-color focus and coarse-pointer arrival. Hero geometry is compared at 1440/900/390/320px widths, with separate synthetic 150% hero-text fixtures.
 
 Tests and visual checks are **author QA**, not independent review, comprehensive accessibility certification, scientific validation or physical-device/browser certification. Safari/iOS and Firefox have not been verified. See [VERIFICATION.md](VERIFICATION.md).
 

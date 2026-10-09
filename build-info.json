@@ -1,13 +1,17 @@
 {
   "product_name": "Groundwork",
   "identity_source": "Paper SVG exports, embedded inline",
+  "browser_icons": [
+    "groundwork-mark.svg",
+    "groundwork-mark-inverse.svg"
+  ],
   "chapters": 21,
   "glossary_terms": 134,
   "learning_words": 11718,
   "sources": 16,
   "notebook_fields": 10,
   "apply_actions": 21,
-  "handbook_bytes": 438083,
+  "handbook_bytes": 439264,
   "unified_notebook": true,
   "offline_runtime": true,
   "source_links_external": true,

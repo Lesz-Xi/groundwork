@@ -29,7 +29,64 @@
           }
         ]
       },
-      "logo_hover_stationary": true
+      "logo_hover_stationary": true,
+      "browser_icons": [
+        {
+          "scheme": "light",
+          "links": 2,
+          "type": "image/svg+xml",
+          "sizes": "any",
+          "media": "",
+          "embedded": true,
+          "natural_width": 184,
+          "natural_height": 184,
+          "pixels": [
+            {
+              "size": 16,
+              "base_pixels": 31,
+              "orange_pixels": 10
+            },
+            {
+              "size": 24,
+              "base_pixels": 98,
+              "orange_pixels": 18
+            },
+            {
+              "size": 32,
+              "base_pixels": 198,
+              "orange_pixels": 22
+            }
+          ]
+        },
+        {
+          "scheme": "dark",
+          "links": 2,
+          "type": "image/svg+xml",
+          "sizes": "any",
+          "media": "(prefers-color-scheme: dark)",
+          "embedded": true,
+          "natural_width": 184,
+          "natural_height": 184,
+          "pixels": [
+            {
+              "size": 16,
+              "base_pixels": 31,
+              "orange_pixels": 10
+            },
+            {
+              "size": 24,
+              "base_pixels": 98,
+              "orange_pixels": 18
+            },
+            {
+              "size": 32,
+              "base_pixels": 198,
+              "orange_pixels": 22
+            }
+          ]
+        }
+      ],
+      "browser_icon_scope": "Emulated theme media matching and SVG image decode/pixels at 16/24/32px; not native tab-cache or installed-app certification"
     },
     {
       "pilot": true,
@@ -59,5 +116,6 @@
   ],
   "screenshots": [],
   "capture_directory": ".qa",
+  "browser_icon_specimen": "browser-icon-specimens.png",
   "status": "passed"
 }

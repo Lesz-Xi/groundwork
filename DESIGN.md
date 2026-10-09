@@ -21,6 +21,10 @@ The opening follows its content rather than reserving a minimum height. Its exis
 
 The hero text action retains its light-grey underline and arrow on hover. Its resting hairline and transform-only sweep occupy the same line; generic link underlines cannot stack above it. Groundwork's home links have no hover underline, while their keyboard focus stays visible. Decorative identity marks remain stationary and non-focusable inside named native links.
 
+## Browser identity
+
+The browser/tab icon uses the pinned primary Groundwork SVG, with the pinned inverse variant declared for dark browser themes. Exact SVG bytes are embedded as data URIs; no sibling asset, new dependency, page-theme change, installable PWA or service worker is introduced. SVG favicon/theme-selection support and native tab caching remain browser-owned.
+
 ## Native ownership
 
 The document owns page scrolling. Rails and textareas use bounded native overflow; there is no parallel scroller or smoothing library. Text selection, editing, vertical textarea resizing, anchors and browser history remain authoritative.

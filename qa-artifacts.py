@@ -19,6 +19,7 @@ class Inventory(HTMLParser):
         self.actions = []
         self.fields = []
         self.runtime_assets = []
+        self.favicon_links = []
         self.h1 = 0
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -28,9 +29,12 @@ class Inventory(HTMLParser):
             self.links.append(attrs.get('href', ''))
             if 'data-apply-chapter' in attrs: self.actions.append(attrs)
         if tag == 'textarea': self.fields.append(attrs)
+        if tag == 'link' and attrs.get('rel') == 'icon':
+            self.favicon_links.append(attrs)
         if tag in ('script', 'img', 'iframe', 'link'):
             pointer = attrs.get('src') or (attrs.get('href') if tag == 'link' else None)
-            if pointer: self.runtime_assets.append(pointer)
+            if pointer and not (tag == 'link' and attrs.get('rel') == 'icon' and pointer.startswith('data:')):
+                self.runtime_assets.append(pointer)
 
 raw = (ROOT/'research-field-guide.html').read_bytes()
 text = raw.decode('utf-8')
@@ -44,6 +48,11 @@ assert 'Scroll to investigate' not in hero, 'Removed hero link reappeared'
 assert 'Begin the guide' in hero and 'Open the notebook' in hero, 'Hero actions removed'
 assert 'one working notebook' not in hero and 'hero-bottom' not in hero and 'Personal research edition / 02' not in text, 'Removed hero metadata reappeared'
 assert len(inventory.actions) == 21 and not inventory.runtime_assets, 'Wrong action count or runtime dependency'
+assert len(inventory.favicon_links) == 2, 'Expected embedded primary and dark-theme SVG browser icons'
+for icon, filename, media in zip(inventory.favicon_links, ('groundwork-mark.svg', 'groundwork-mark-inverse.svg'), (None, '(prefers-color-scheme: dark)')):
+    assert icon.get('type') == 'image/svg+xml' and icon.get('sizes') == 'any' and icon.get('media') == media, 'Browser icon declaration changed'
+    assert icon['href'].startswith('data:image/svg+xml;base64,'), 'Browser icon must travel inside the HTML'
+    assert base64.b64decode(icon['href'].split(',', 1)[1], validate=True) == (ROOT/'identity/groundwork'/filename).read_bytes(), 'Browser icon differs from pinned Paper SVG'
 for action in inventory.actions:
     assert action['id'] == 'apply-' + action['data-apply-chapter']
     assert action['href'].startswith('#field-')
@@ -102,6 +111,8 @@ result = {
     'product_name': 'Groundwork',
     'header_descriptor_removed': True,
     'paper_marks_embedded_exactly': 2,
+    'embedded_svg_browser_icons_exactly': 2,
+    'dark_theme_icon_declared': True,
     'branded_export_headings_with_stable_filenames': True,
     'unique_ids': len(inventory.ids),
     'internal_anchors_resolve': True,
